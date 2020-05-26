@@ -12,6 +12,8 @@ def group_and_sort(dataframe, L_group_cols, L_group_keys, agg_function, bool_sor
         You have to whoose between 'min', 'max', 'mean' and 'median'.
     - 'bool_sort_ascending' : A boolean which indicates if you want to sort the resulting DataFrame in
         the ascending order (if set to True) or in the descending one (if set to False)
+        
+        changed
     """
     if agg_function=='min':
         df_aggregated = dataframe[L_group_cols].groupby(L_group_keys).min()
